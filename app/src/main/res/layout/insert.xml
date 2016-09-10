@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <TextView android:text="单词" />
+
+        <EditText
+            android:id="@+id/textWord"
+            android:layout_width="match_parent" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="含义" />
+
+        <EditText
+            android:id="@+id/textMeaning"
+            android:layout_width="match_parent" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="示例" />
+
+        <EditText
+            android:id="@+id/textSample"
+            android:layout_width="match_parent" />
+    </TableRow>
+</TableLayout>
