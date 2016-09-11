@@ -1,31 +1,30 @@
 package com.example.mywords;
 
-        import android.app.AlertDialog;
-        import android.content.ContentValues;
-        import android.content.DialogInterface;
-        import android.content.Intent;
-        import android.database.Cursor;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.os.Bundle;
-        import android.support.design.widget.FloatingActionButton;
-        import android.support.v7.app.AppCompatActivity;
-        import android.support.v7.widget.Toolbar;
-        import android.util.Log;
-        import android.view.ContextMenu;
-        import android.view.View;
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.widget.AdapterView;
-        import android.widget.EditText;
-        import android.widget.ListView;
-        import android.widget.SimpleAdapter;
-        import android.widget.TableLayout;
-        import android.widget.TextView;
-        import android.widget.Toast;
-
-        import java.util.ArrayList;
-        import java.util.HashMap;
-        import java.util.Map;
+import android.app.AlertDialog;
+import android.content.ContentValues;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.ContextMenu;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TableLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     WordsDBHelper mDbHelper;

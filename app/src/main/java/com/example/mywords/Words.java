@@ -1,11 +1,13 @@
 package com.example.mywords;
 
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 /**
  * Created by 果红艳。 on 2016/9/9 0009.
  */
 public class Words {
+    public static final String AUTHORITY = "com.example.wordscontentprovider";
     public Words() {
     }
 
@@ -14,5 +16,21 @@ public class Words {
         public static final String COLUMN_NAME_WORD="word";
         public static final String COLUMN_NAME_MEANING="meaning";
         public static final String COLUMN_NAME_SAMPLE="sample";
+
+        //MIME类型
+        public static final String MIME_DIR_PREFIX = "vnd.android.cursor.dir";
+        public static final String MIME_ITEM_PREFIX = "vnd.android.cursor.item";
+        public static final String MINE_ITEM = "vnd.bistu.cs.se.word";
+
+        public static final String MINE_TYPE_SINGLE = MIME_ITEM_PREFIX + "/" + MINE_ITEM;
+        public static final String MINE_TYPE_MULTIPLE = MIME_DIR_PREFIX + "/" + MINE_ITEM;
+
+        public static final String PATH_SINGLE = "word/#";//单条数据的路径
+        public static final String PATH_MULTIPLE = "word";//多条数据的路径
+
+        //Content Uri
+        public static final String CONTENT_URI_STRING = "content://" + AUTHORITY + "/" + PATH_MULTIPLE;
+        public static final Uri CONTENT_URI = Uri.parse(CONTENT_URI_STRING);
+
     }
 }
